@@ -32,3 +32,5 @@ jobs:
         run: mv _.env.exempl .env
       - name: Installer le vendor 
         run: composer install
+      - name: creation de la base de donnee
+        run: php bin/console doctrine:database:create 
